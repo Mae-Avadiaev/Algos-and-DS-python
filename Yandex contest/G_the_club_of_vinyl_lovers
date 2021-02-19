@@ -1,0 +1,16 @@
+SELECT
+	mus.name,
+	l.name as label, 
+	a.name as album, 
+	a.rating 
+FROM 
+	musicians mus 
+	left join albums a on a.musicians_id=mus.id 
+	left join lables l on a.lables_id=l.id 
+WHERE 
+	(l.name = 'Громофон' 
+	OR l.name = 'Скрипка') 
+	AND (a.rating >= 5 
+	AND a.rating < 10) 
+ORDER BY 
+	mus.name;
