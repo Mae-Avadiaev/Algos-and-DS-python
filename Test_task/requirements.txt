@@ -1,0 +1,4 @@
+django==2.2.10
+djangorestframework
+uWSGI>=2.0.18,<2.1
+psycopg2-binary
