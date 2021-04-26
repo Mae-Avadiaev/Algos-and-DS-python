@@ -2,7 +2,7 @@
 
 1. Yandex contest for Yandex Academy for school of Back-end development
 
-2. REST API сервис 
+2. REST API сервис
 
 Задача: спроектировать и разработать API для системы опросов пользователей.
 
