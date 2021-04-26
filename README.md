@@ -15,3 +15,5 @@
 - получение списка активных опросов
 - прохождение опроса: опросы можно проходить анонимно, в качестве идентификатора пользователя в API передаётся числовой ID, по которому сохраняются ответы пользователя на вопросы; один пользователь может участвовать в любом количестве опросов
 - получение пройденных пользователем опросов с детализацией по ответам (что выбрано) по ID уникальному пользователя
+
+3. Advanced Algorithms and Complexity is the 5th and most exiting part of the Algorithms and Data Structures Course provided by University of San Diego and HSE. Comments are included in the files.
