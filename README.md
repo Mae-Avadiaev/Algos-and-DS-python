@@ -31,13 +31,13 @@ python manage.py createsuperuser
 y
 
 Документация API:
-GET /poll_app/{user_id} - список доступных опросов для {user_id}
-GET /poll_app/{user_id}/vote/ - список вопросов опроса
-POST /poll_app/{user_id}/vote/submit/ - проголосовать 
-GET /poll_app/{user_id}/results/ - посмотреть результаты опроса
-GET /poll_app/{user_id}/results_main/ - список результатов для {user_id}
-GET /admin/ - админка
+- GET /poll_app/{user_id} - список доступных опросов для {user_id}
+- GET /poll_app/{user_id}/vote/ - список вопросов опроса
+- POST /poll_app/{user_id}/vote/submit/ - проголосовать 
+- GET /poll_app/{user_id}/results/ - посмотреть результаты опроса
+- GET /poll_app/{user_id}/results_main/ - список результатов для {user_id}
+- GET /admin/ - админка
 
 Что не получилось реализовать:
-Скрипт по автоматическому запуску миграций и добавления суперюзера
-Подключить автодокументацию Swagger (No operations defined in spec!)
+- Скрипт по автоматическому запуску миграций и добавления суперюзера
+- Подключить автодокументацию Swagger (No operations defined in spec!)
