@@ -19,16 +19,16 @@
 - получение пройденных пользователем опросов с детализацией по ответам (что выбрано) по ID уникальному пользователя
 
 Инструкции по развертыванию:
-cd папка_с_проектом
-docker-compose up --build
-Откройте новое окно терминала и наберите следующие команды
-docker exec -ti test_task_web_1 /bin/sh
-python manage.py migrate
-python manage.py createsuperuser
-(enter)
-введите пароль (root)
-повторите пароль (root)
-y
+- cd папка_с_проектом
+- docker-compose up --build
+- Откройте новое окно терминала и наберите следующие команды
+- docker exec -ti test_task_web_1 /bin/sh
+- python manage.py migrate
+- python manage.py createsuperuser
+- (enter)
+- введите пароль (root)
+- повторите пароль (root)
+- y
 
 Документация API:
 - GET /poll_app/{user_id} - список доступных опросов для {user_id}
