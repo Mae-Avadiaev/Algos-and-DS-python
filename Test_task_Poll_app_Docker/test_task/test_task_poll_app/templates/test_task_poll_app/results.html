@@ -1,0 +1,64 @@
+{% extends "test_task_poll_app/base.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{poll_name}}</h3>
+            </div>
+            <form method="POST" action="{% url 'results_main' user_id %}">
+                {% csrf_token %}
+                {% for question in questions_mass %}
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>{{question.name}}</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <hr/>
+                            <div class="form-group">
+                                {% if question.type == '1' %}
+                                <div class="text">
+                                    <label>
+                                        <input type="text" value="{{question.ans}}" disabled>
+                                    </label> &nbsp;&nbsp;
+                                </div>
+                                {% elif question.type == '3' %}
+                                <div class="checkbox">
+                                    {% for ans in question.ans %}
+                                    <label>
+                                        <input type="checkbox" {{ans.checked}} disabled>
+                                        {{ans.name}}
+                                    </label> &nbsp;&nbsp;
+                                    {% endfor %}
+                                </div>
+                                {% elif question.type == '2' %}
+                                <div class="radio">
+                                    {% for ans in question.ans %}
+                                    <label>
+                                        <input type="radio" {{ans.checked}} disabled>
+                                        {{ans.name}}
+                                    </label> &nbsp;
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <input type="hidden" name="question_text" value="{{question.text}}">
+                <button type="submit" class="btn btn-info">
+                    К результатам
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
