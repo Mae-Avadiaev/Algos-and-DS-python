@@ -1,1 +1,0 @@
-REFRESH MATERIALIZED VIEW mv_country_indicator_infected_humans_covid;
