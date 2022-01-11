@@ -1,13 +1,13 @@
 ### 🐍 Python experience in OOP, algorithms and data structures 
 
-## 1. Yandex contest 
+## ⚡️ Yandex contest 
 for Yandex Academy for school of Back-end development
 
-## 2. Advanced Algorithms and Complexity 
+## 🧬 Advanced Algorithms and Complexity 
 is the 5th and most exiting part of the **Algorithms and Data Structures Course** provided by **University of San Diego and HSE**. 
 *Comments are included in the files.*
 
-## 3. REST API сервис
+## 🌐 REST API сервис
 
 Задача: спроектировать и разработать API для системы опросов пользователей.
 
